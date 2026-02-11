@@ -1,0 +1,21 @@
+name: Deploy Valentine Website
+
+on:
+  push:
+    branches:
+      - main  # Deploy when you push to main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Upload the site folder directly (no separate build step needed for static HTML)
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          # Path to your static site (root in this case)
+          path: .
