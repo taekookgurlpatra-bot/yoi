@@ -1,0 +1,112 @@
+/* ===== Reset & Basic Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #ffe6e6; /* Soft pink background */
+    color: #800000; /* Deep red text */
+    line-height: 1.6;
+}
+
+/* ===== Header / Navigation ===== */
+header {
+    background: #ff4d6d; /* Bright pink-red */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff7f7;
+    transform: scale(1.1);
+}
+
+/* ===== Main Content ===== */
+main {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* ===== Headings ===== */
+h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* ===== Teaser Buttons ===== */
+button {
+    background: #ff9999;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background: #ff4d6d;
+    transform: scale(1.1);
+}
+
+/* ===== Promo Section ===== */
+.promo {
+    background: #ffd6d6;
+    border-radius: 15px;
+    padding: 30px 20px;
+    margin-top: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #ff4d6d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ===== Input & Textarea Styles (for future forms) ===== */
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ff9999;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+}
+
+textarea {
+    resize: none;
+}
