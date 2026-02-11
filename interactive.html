@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Fun 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="interactive.html">Interactive Fun</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="love-messages.html">Love Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Interactive Fun 💌</h1>
+        <p>Play quizzes, write virtual love letters, or try fun love games!</p>
+
+        <!-- GIF Header -->
+        <div class="interactive-gifs">
+            <img src="images/cupid.gif" alt="Cupid Flying" width="150">
+            <img src="images/hearts.gif" alt="Floating Hearts" width="150">
+        </div>
+
+        <!-- Quiz Button -->
+        <button onclick="startQuiz()">Take the Love Quiz 💖</button>
+
+        <!-- Virtual Love Letter -->
+        <section class="love-letter" style="margin-top:30px;">
+            <h2>Send a Virtual Love Letter</h2>
+            <img src="images/flowers.gif" alt="Flowers" width="150">
+            <input type="text" id="fromName" placeholder="Your Name">
+            <input type="text" id="toName" placeholder="Your Partner’s Name">
+            <textarea id="letterMessage" placeholder="Write your message..." rows="4"></textarea>
+            <button onclick="sendLetter()">Generate Letter 💌</button>
+            <p id="letterOutput" style="margin-top:15px; font-size:1.2em;"></p>
+        </section>
+
+        <section style="margin-top:30px;">
+            <h2>Fun Games Coming Soon 🎮</h2>
+            <p>Matching hearts, spin-the-wheel, and more!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>💖 Made with love | © 2026 Valentine’s Delight</p>
+    </footer>
+
+    <script src="js/interactive.js"></script>
+</body>
+</html>
